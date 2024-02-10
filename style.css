@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: futura;
+}
+
+body {
+    background: #1B1A19;
+}
+
+.container{
+    height: 200x;
+    width: 400px;
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    padding: 15px;
+    border-radius: 10px ;
+}
+
+.main{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-star-o::before {
+    content: '\f006';
+    color: yellow;
+    font-size: 25px;
+}
+
+.star-rating-container{
+    padding: 10px;
+    text-align: center;
+}
+
+.selected-rating-container{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 10px;
+}
+
+.fa-star:hover{
+    cursor: pointer;
+}
+
+.fa-star::before{
+    content: '\f005';
+}
