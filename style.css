@@ -1,19 +1,24 @@
-*{
-    padding: 0;
-    margin: 0;
+html{
     box-sizing: border-box;
-    font-family: futura;
-}
 
-body {
-   
-    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
-}
+    }
+
+    ::after,::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    }
+
+    body{
+        background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    }
+
 
 .container{
-    height: 200x;
+    height: 160px;
+    font-family: futura;
     width: 400px;
-    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    background: white;
     padding: 15px;
     border-radius: 10px ;
 }
@@ -21,7 +26,7 @@ body {
 .main{
     position: absolute;
     top: 40%;
-    left: 20%;
+    left: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,12 +34,12 @@ body {
 
 .fa-star-o::before {
     content: '\f006';
-    color: yellow;
+    color: black;
     font-size: 25px;
 }
 
 .star-rating-container{
-    padding: 10px;
+    padding: 8px;
     text-align: center;
 }
 
@@ -48,7 +53,7 @@ body {
 .selected-rating-container p{
     font-size: 20px;
     font-weight: bold;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .fa-star:hover{
@@ -57,6 +62,9 @@ body {
 
 .fa-star::before{
     content: '\f005';
-    color: red;
+    color: blue;
     font-size:30px;
 }
+
+.container h1{
+    margin-top: auto;}
